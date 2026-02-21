@@ -89,22 +89,3 @@ window.addEventListener('scroll', () => {
     }
   });
 });
-
-
-/* ===============================
-   Copiar Email (contato)
-================================ */
-function copiarEmail(email) {
-  const emailToCopy = "gustavosamuel439@gmail.com";
-  const btn = document.querySelector('.copy-email');
-
-  navigator.clipboard.writeText(email).then(() => {
-    btn.innerText = "Copiado ✔";
-    btn.classList.add('copied');
-
-    setTimeout(() => {
-      btn.innerText = "Copiar email";
-      btn.classList.remove('copied');
-    }, 2000);
-  });
-}
