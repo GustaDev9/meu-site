@@ -162,7 +162,8 @@ h3 {
 
 /* IMAGENS PROJETOS */
 #minibank,
-#telcal {
+#telcal,
+#bibli {
   width: 100%;
   max-width: 320px;
   display: block;
@@ -173,7 +174,8 @@ h3 {
 }
 
 #minibank:hover,
-#telcal:hover {
+#telcal:hover
+#bibli:hover {
   transform: scale(1.05);
 }
 
