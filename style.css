@@ -7,6 +7,10 @@
   box-sizing: border-box;
 }
 
+section{
+  scroll-margin-top:120px;
+}
+
 /* VARIÁVEIS */
 :root {
   --accent: #38bdf8;
@@ -161,9 +165,9 @@ h3 {
 }
 
 /* IMAGENS PROJETOS */
-#minibank,
-#telcal,
-#bibli {
+
+#bibli,
+#shopgames {
   width: 100%;
   max-width: 320px;
   display: block;
@@ -173,9 +177,9 @@ h3 {
   transition: transform 0.3s ease;
 }
 
-#minibank:hover,
-#telcal:hover
-#bibli:hover {
+
+#bibli:hover,
+#shopgames:hover {
   transform: scale(1.05);
 }
 
@@ -227,4 +231,72 @@ html {
   .skills {
     flex-direction: column;
   }
+
+  .card img{
+  max-width:100%;
+  }
+
+  .nav-links{
+  gap:12px;
+  }
+
+  .skills{
+  justify-content:center;
+  }
+}
+
+/* NAVBAR */
+
+.navbar{
+  position: fixed;
+  top:0;
+  width:100%;
+  backdrop-filter: blur(10px);
+  background: rgba(2,6,23,0.6);
+  border-bottom:1px solid rgba(255,255,255,0.05);
+  z-index:1000;
+}
+
+.nav-container{
+  max-width:1000px;
+  margin:auto;
+  padding:12px 20px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.logo{
+  font-weight:700;
+  color:var(--accent);
+}
+
+.nav-links{
+  display:flex;
+  gap:20px;
+}
+
+.nav-links a{
+  text-decoration:none;
+  color:var(--text-main);
+  font-size:0.9rem;
+  transition:0.2s;
+}
+
+.nav-links a:hover{
+  color:var(--accent);
+}
+
+.card{
+  margin-bottom:30px;
+  padding:24px;
+}
+
+.card h4{
+  font-size:1.3rem;
+  margin-bottom:10px;
+}
+
+.card p{
+  margin-bottom:10px;
 }

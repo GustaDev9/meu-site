@@ -52,20 +52,6 @@ window.addEventListener('scroll', () => {
   if (heroSub) heroSub.style.transform = `translateY(${scrollY * 0.3}px)`;
 });
 
-
-/* ===============================
-   Glow animado 3D (mouse)
-================================ 
-document.addEventListener('mousemove', e => {
-  const x = (window.innerWidth / 2 - e.clientX) / 25;
-  const y = (window.innerHeight / 2 - e.clientY) / 25;
-
-  if (heroTitle) {
-    heroTitle.style.transform += ` rotateY(${x}deg) rotateX(${y}deg)`;
-  }
-});
-*/
-
 /* ===============================
    Navbar ativa por seção
 ================================ */
