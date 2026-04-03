@@ -167,7 +167,8 @@ h3 {
 /* IMAGENS PROJETOS */
 
 #bibli,
-#shopgames {
+#shopgames,
+#foodorder {
   width: 100%;
   max-width: 320px;
   display: block;
@@ -178,7 +179,8 @@ h3 {
 }
 
 #bibli:hover,
-#shopgames:hover {
+#shopgames:hover,
+#foodorder:hover {
   transform: scale(1.05);
 }
 
